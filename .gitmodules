@@ -1,3 +1,6 @@
 [submodule "FFmpeg"]
 	path = FFmpeg
 	url = git@github.com:t-tang-rfc/FFmpeg.git
+[submodule "nv-codec-headers"]
+	path = nv-codec-headers
+	url = git@github.com:t-tang-rfc/nv-codec-headers.git
