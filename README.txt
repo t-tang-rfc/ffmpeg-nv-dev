@@ -70,6 +70,11 @@ ffmpeg -y -vsync 0 -hwaccel cuda -hwaccel_output_format cuda -i SampleVideo_1280
 ```
 The above command will generate two output videos with different resolutions by scaling the input video.
 
+## Tips
+
+The dependent submodules point to forked repos.
+In order to checkout a specific tag, one can add the original repo as another remote, and then checkout the desited tag, and push it to the forked repo. using `git push <remote> tag <tag-name>`.
+
 ## References
 
 1. [Using FFmpeg with NVIDIA GPU Hardware Acceleration](https://docs.nvidia.com/video-technologies/video-codec-sdk/12.2/ffmpeg-with-nvidia-gpu/index.html)
