@@ -4,3 +4,6 @@
 [submodule "nv-codec-headers"]
 	path = nv-codec-headers
 	url = git@github.com:t-tang-rfc/nv-codec-headers.git
+[submodule ".devcontainer"]
+	path = .devcontainer
+	url = git@github.com:t-tang-rfc/pd-imagine.git
