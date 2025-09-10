@@ -29,10 +29,12 @@ make install
 
 # Step 3: Build FFmpeg with NVENC support
 echo "=== [INFO] Building FFmpeg with NVENC support ==="
-cd "$SCRIPT_DIR/FFmpeg"
+INSTALL_DIR="/opt/ffmpeg"
+mkdir -p "$SCRIPT_DIR/FFmpeg/build"
+cd "$SCRIPT_DIR/FFmpeg/build"
 
 # Configure FFmpeg with NVENC support
-./configure \
+../configure \
 	--enable-nonfree \
 	--enable-cuda-nvcc \
 	--enable-libnpp \
